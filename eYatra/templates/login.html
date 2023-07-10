@@ -1,0 +1,84 @@
+{% include "navbar.html" %}
+{% include "header.html" %}
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <title>TourMitra</title>
+        <style>
+            #content {
+                background-image: url('static/img/back1.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            
+            #logdiv { 
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                float:center;
+            }
+
+           
+            .login-container {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 40px;
+                margin-top: 100px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+
+            #login{
+                color:black;
+            }
+          
+           
+        </style>
+            
+    </head>
+
+    <body>
+        
+
+        <div id="content">
+            <div id="logdiv">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 login-container">
+
+                            <h3 class="text-center" id="login">Login</h3>
+
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+                                </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                                    </div>
+                                 <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                                 <p>Don't have an account<a href="{% url 'register'%}">Register</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+         {% include "footer.html" %} 
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+
+
+

@@ -1,0 +1,137 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+{% include 'header.html' %}
+{% include 'navbar.html'%}
+<body>
+  
+
+    <!-- Navbar & Hero Start -->
+
+    <!-- Navbar & Hero End -->
+
+    
+
+
+    <!-- Navbar & Hero Start -->
+   
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Destination Start -->
+    <br><br>
+    <div class="text-center">
+        <h1 class="mb-5" style="font-weight:bold">Destinations</h1>              
+    </div> 
+    <div class="container-xxl py-5" style="width:40%">
+        <div class="container">
+             
+            <h4 class="mb-5  text-left">Provinces</h4>         
+            <div class="row g-4 justify-content-left">
+                <div class="col-4">
+                    <div class="package-item">
+                        <a href="{% url 'package'%}">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid custom-image" src="static/img/koshi.jpg" alt="" style="width: 300px; height: 150px;">
+                            </div>
+                        </a>
+                       <p style="color: green; font-size: 20px; font-weight: bold;">Koshi</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <a href="{% url 'package'%}">
+                          <div class="overflow-hidden">
+                            <img class="img-fluid custom-image" src="static/img/madhesh.jpg" alt="" style="width: 300px; height: 150px;">
+                          </div>
+                        </a>
+                        <p style="color: green; font-size: 20px; font-weight: bold;">Madhesh</p>
+                       
+                    </div>
+                </div>
+            
+
+
+                <div class="col-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <a href="{% url 'package'%}">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid custom-image" src="static/img/bagmati.jpg" alt="" style="width: 300px; height: 150px;">
+                          </div>
+                        </a>
+                        <p style="color: green; font-size: 20px; font-weight: bold;">Bagmati</p>
+                                             
+                    </div>
+                </div>
+
+                <div class="col-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <a href="{% url 'package'%}">
+                          <div class="overflow-hidden">
+                            <img class="img-fluid" src="static/img/gandaki.png" alt="" style="width: 300px; height: 150px;">
+                          </div>
+                        </a>
+                        <p style="color: green; font-size: 20px; font-weight: bold;">Gandaki</p>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <a href="{% url 'package'%}">
+                          <div class="overflow-hidden">
+                            <img class="img-fluid" src="static/img/lumbini.jpg" alt="" style="width: 300px; height: 150px;">
+                          </div>
+                        </a>
+                        <p style="color: green; font-size: 20px; font-weight: bold;">Lumbini</p>                   
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <a href="{% url 'package'%}">
+                          <div class="overflow-hidden">
+                            <img class="img-fluid" src="static/img/karnali.jpg" alt="" style="width: 300px; height: 150px;">
+                          </div>
+                        </a>
+                        <p style="color: green; font-size: 20px; font-weight: bold;">Karnali</p>                  
+                        
+                    </div>
+                </div>
+
+
+                
+                <div class="col-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <a href="{% url 'package'%}">
+                          <div class="overflow-hidden">
+                            <img class="img-fluid" src="static/img/sudurpaschim.jpg" alt="" style="width: 300px; height: 150px;">
+                          </div>
+                        </a>
+                        <p style="color: green; font-size: 20px; font-weight: bold;">Sudurpaschim</p>                  
+                        
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+        
+        </div>
+    </div>
+    <!-- Destination Start -->
+        
+
+    <!-- Footer Start -->
+    {% include 'footer.html' %}
+    <!-- Footer End -->
+    
+</body>
+
+</html>
